@@ -3,79 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akash Dwivedi | Data Analyst | Power BI Expert</title>
-    
-    <!-- Meta Tags for SEO -->
-    <meta name="description" content="Akash Dwivedi's professional resume and portfolio showcasing expertise in data analysis, Power BI, and SQL.">
-    <meta property="og:title" content="Akash Dwivedi | Data Analyst | Power BI Expert">
-    <meta property="og:description" content="Expert in SQL, Power BI, Tableau, and Material Data Visualization">
-    <meta property="og:image" content="path/to/your-image.jpg">
-
-    <!-- Bootstrap CSS (if using Bootstrap for styling) -->
+    <title>Akash Dwivedi | Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #243B55, #141E30); /* Professional dark gradient */
+            color: white; /* Make text white for better contrast */
         }
-        .header-top {
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            padding: 50px 0;
-            background-color: #f8f9fa;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
-        .header-top h1 {
-            font-size: 2.5rem;
+
+        header h1 {
+            font-size: 3rem;
         }
-        .profile-image {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
         }
-        .social-links a {
-            margin: 0 10px;
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        section {
+            display: none;
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        /* Animation */
+        .fade {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .fade.active {
+            opacity: 1;
+        }
+
+        /* Additional styling */
+        main {
+            margin-top: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+        }
+
+        /* Background Styling */
+        body {
+            background-image: url('https://example.com/background-image.jpg'); /* Add professional background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Ensure sections are readable */
+        section {
+            background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background to the sections */
+            border-radius: 8px;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
 
     <!-- Header Section -->
-    <header class="header-top">
-        <img src="path/to/your-image.jpg" alt="Akash Dwivedi" class="profile-image">
+    <header>
         <h1>Akash Dwivedi</h1>
-        <h2>Data Analyst | Power BI Specialist</h2>
-        
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/akashdwivd" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i>LinkedIn</a>
-            <a href="mailto:akash.dwivd@gmail.com"><i class="bi bi-envelope"></i>Email</a>
-            <a href="tel:+918109174599"><i class="bi bi-telephone"></i>Phone</a>
-        </div>
+        <p>Data Analyst | Power BI Specialist</p>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('summary')">Home</a></li>
+                <li><a href="#" onclick="showSection('certifications')">Certifications</a></li>
+                <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#" onclick="showSection('experience')">Work Experience</a></li>
+                <li><a href="#" onclick="showSection('social')">Social Responsibilities</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="container mt-5">
-        <h2>About Me</h2>
-        <p>Welcome! I am Akash Dwivedi, a data analyst with expertise in SQL, Power BI, and Tableau. I specialize in analyzing complex datasets and providing interactive data visualization solutions to inform strategic decision-making. My experience includes creating insightful dashboards, conducting statistical analyses, and optimizing data processes.</p>
-    </section>
+    <!-- Sections -->
+    <main>
+        <!-- Home Section -->
+        <section id="summary" class="fade active">
+            <h2>Professional Summary</h2>
+            <p>I am a data-driven professional passionate about integrating business strategies with data science to optimize decision-making. Skilled in Data Science, I analyze complex datasets, create insightful dashboards, and deliver actionable reports. I focus on leveraging data, machine learning, and automation to drive business growth.</p>
+        </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="container mt-5">
-        <h2>Resume</h2>
-        <ul>
-            <li><strong>Current Role:</strong> Founder at Matter Insights, dedicated to material property visualization</li>
-            <li><strong>Master's Degree:</strong> Material Science & Technology, NIT Calicut (2023, CGPA: 9.05)</li>
-            <li><strong>Bachelor's Degree:</strong> Mechanical Engineering, Jabalpur Engineering College (2020)</li>
-        </ul>
-    </section>
+        <!-- Certifications Section -->
+        <section id="certifications" class="fade">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Career Essentials in Data Analysis by Microsoft and LinkedIn</li>
+                <li>Scrum Basics by Project Management Institute</li>
+                <li>Business Analysis Foundations by IIBA</li>
+            </ul>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container mt-5">
-        <h2>Contact</h2>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:akash.dwivd@gmail.com">akash.dwivd@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+918109174599">+91 8109174599</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/akashdwivd" target="_blank">linkedin.com/in/akashdwivd</a></li>
-        </ul>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills" class="fade">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Technical Skills:</strong> Python, R, SQL, Power BI, Tableau, MySQL</li>
+                <li><strong>Soft Skills:</strong> Problem-solving, Critical Thinking, Fluent English, French (Basic)</li>
+            </ul>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="fade">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Founder, Matter Insights (2024-Present)</strong><br>Visualizing material properties for engineers and scientists.</li>
+                <li><strong>Trainee Engineer, Vestas (2023-2024)</strong><br>Analyzed wind energy data and created Power BI dashboards.</li>
+                <li><strong>Intern R&D, Renault-Nissan (2022)</strong><br>Analyzed automobile battery data to improve cost efficiency.</li>
+            </ul>
+        </section>
+
+        <!-- Social Responsibilities Section -->
+        <section id="social" class="fade">
+            <h2>Social Responsibilities</h2>
+            <ul>
+                <li><strong>Volunteer, The Earth Foundation (2024-Present)</strong><br>Raising awareness about environmental sustainability.</li>
+                <li><strong>Volunteer, iVolunteer (2021-2022)</strong><br>Empowered underprivileged children during the COVID-19 pandemic.</li>
+                <li><strong>Volunteer, Green Bhumi (2020-2021)</strong><br>Focused on waste management and climate change awareness.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="fade">
+            <h2>Contact Me</h2>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:akash.dwivd@gmail.com">akash.dwivd@gmail.com</a></li>
+                <li><strong>Phone:</strong> <a href="tel:+918109174599">+91 8109174599</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/akashdwivd" target="_blank">linkedin.com/in/akashdwivd</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- JavaScript for section switching with animation -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+                section.classList.remove('fade');
+            });
+
+            // Show the clicked section with fade-in effect
+            var sectionToShow = document.getElementById(sectionId);
+            sectionToShow.classList.add('active');
+            setTimeout(function() {
+                sectionToShow.classList.add('fade');
+            }, 100);
+        }
+    </script>
 
 </body>
 </html>
