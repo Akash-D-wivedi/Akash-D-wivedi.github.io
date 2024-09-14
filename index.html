@@ -3,198 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akash Dwivedi | Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <title>Akash Dwivedi Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://github.com/Akash-D-wivedi/Akash-D-wivedi.github.io/blob/aea127befb07f04f9008670ffe2d4e117b1d4a9a/style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #243B55, #141E30); /* Professional dark gradient */
-            color: white; /* Make text white for better contrast */
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+            background-color: #282c34;
             color: white;
-            padding: 20px 0;
+            padding: 1rem;
             text-align: center;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
-        header h1 {
-            font-size: 3rem;
-        }
-
-        header p {
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-
-        header nav ul {
-            list-style-type: none;
+        nav ul {
+            list-style: none;
             padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
         }
 
-        header nav ul li {
-            margin: 0 20px;
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
         }
 
-        header nav ul li a {
+        nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 1.2rem;
             font-weight: 500;
         }
 
         section {
-            display: none;
-            padding: 50px 20px;
-            min-height: 100vh;
-        }
-
-        section.active {
-            display: block;
-        }
-
-        /* Animation */
-        .fade {
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .fade.active {
-            opacity: 1;
-        }
-
-        /* Additional styling */
-        main {
-            margin-top: 50px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            padding: 10px 0;
-        }
-
-        /* Background Styling */
-        body {
-            background-image: url('https://example.com/background-image.jpg'); /* Add professional background image */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        /* Ensure sections are readable */
-        section {
-            background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background to the sections */
+            padding: 2rem;
+            margin: 2rem 0;
+            background-color: white;
             border-radius: 8px;
-            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #282c34;
+            color: white;
+        }
+
+        h1, h2 {
+            margin: 0.5rem 0;
+        }
+
+        .job, .role {
+            margin-bottom: 1.5rem;
         }
     </style>
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
         <h1>Akash Dwivedi</h1>
-        <p>Data Analyst | Power BI Specialist</p>
         <nav>
             <ul>
-                <li><a href="#" onclick="showSection('summary')">Home</a></li>
-                <li><a href="#" onclick="showSection('certifications')">Certifications</a></li>
-                <li><a href="#" onclick="showSection('skills')">Skills</a></li>
-                <li><a href="#" onclick="showSection('experience')">Work Experience</a></li>
-                <li><a href="#" onclick="showSection('social')">Social Responsibilities</a></li>
-                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#social-responsibilities">Social Responsibilities</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sections -->
-    <main>
-        <!-- Home Section -->
-        <section id="summary" class="fade active">
-            <h2>Professional Summary</h2>
-            <p>I am a data-driven professional passionate about integrating business strategies with data science to optimize decision-making. Skilled in Data Science, I analyze complex datasets, create insightful dashboards, and deliver actionable reports. I focus on leveraging data, machine learning, and automation to drive business growth.</p>
-        </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a data-driven professional passionate about integrating business strategies with data science to optimize decision-making...</p>
+    </section>
 
-        <!-- Certifications Section -->
-        <section id="certifications" class="fade">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Career Essentials in Data Analysis by Microsoft and LinkedIn</li>
-                <li>Scrum Basics by Project Management Institute</li>
-                <li>Business Analysis Foundations by IIBA</li>
-            </ul>
-        </section>
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Masters in Material Science & Technology</strong>, National Institute of Technology Calicut <br>
+                <em>CGPA: 9.05 out of 10</em>
+                <p>2021 – 2023</p>
+            </li>
+            <li>
+                <strong>Bachelors in Mechanical Engineering</strong>, Jabalpur Engineering College <br>
+                <em>Grade: 7.62 out of 10</em>
+                <p>2016 – 2020</p>
+            </li>
+        </ul>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="fade">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Technical Skills:</strong> Python, R, SQL, Power BI, Tableau, MySQL</li>
-                <li><strong>Soft Skills:</strong> Problem-solving, Critical Thinking, Fluent English, French (Basic)</li>
-            </ul>
-        </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming languages: Python, R, SQL</li>
+            <li>Data Visualization: Power BI, Tableau</li>
+            <li>ETL, Data Processing, and Data Coding</li>
+        </ul>
+    </section>
 
-        <!-- Work Experience Section -->
-        <section id="experience" class="fade">
-            <h2>Work Experience</h2>
-            <ul>
-                <li><strong>Founder, Matter Insights (2024-Present)</strong><br>Visualizing material properties for engineers and scientists.</li>
-                <li><strong>Trainee Engineer, Vestas (2023-2024)</strong><br>Analyzed wind energy data and created Power BI dashboards.</li>
-                <li><strong>Intern R&D, Renault-Nissan (2022)</strong><br>Analyzed automobile battery data to improve cost efficiency.</li>
-            </ul>
-        </section>
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <div class="job">
+            <h3>Founder, Matter Insights (2024 – Present)</h3>
+            <p>Matter Insights focuses on helping employees and college professors visualize the materials they use...</p>
+        </div>
+        <div class="job">
+            <h3>Trainee Engineer, Vestas (2023 – 2024)</h3>
+            <p>Utilized SQL to aggregate and analyze meteorological data from wind turbines, improving global operations and energy efficiency by 15%...</p>
+        </div>
+    </section>
 
-        <!-- Social Responsibilities Section -->
-        <section id="social" class="fade">
-            <h2>Social Responsibilities</h2>
-            <ul>
-                <li><strong>Volunteer, The Earth Foundation (2024-Present)</strong><br>Raising awareness about environmental sustainability.</li>
-                <li><strong>Volunteer, iVolunteer (2021-2022)</strong><br>Empowered underprivileged children during the COVID-19 pandemic.</li>
-                <li><strong>Volunteer, Green Bhumi (2020-2021)</strong><br>Focused on waste management and climate change awareness.</li>
-            </ul>
-        </section>
+    <section id="social-responsibilities">
+        <h2>Social Responsibilities</h2>
+        <div class="role">
+            <h3>Volunteer, The Earth Foundation (2024 – Present)</h3>
+            <p>Raised awareness of The Earth Prize by helping schools and teams join the competition...</p>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="fade">
-            <h2>Contact Me</h2>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:akash.dwivd@gmail.com">akash.dwivd@gmail.com</a></li>
-                <li><strong>Phone:</strong> <a href="tel:+918109174599">+91 8109174599</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/akashdwivd" target="_blank">linkedin.com/in/akashdwivd</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- JavaScript for section switching with animation -->
-    <script>
-        function showSection(sectionId) {
-            // Hide all sections
-            var sections = document.querySelectorAll('section');
-            sections.forEach(function(section) {
-                section.classList.remove('active');
-                section.classList.remove('fade');
-            });
-
-            // Show the clicked section with fade-in effect
-            var sectionToShow = document.getElementById(sectionId);
-            sectionToShow.classList.add('active');
-            setTimeout(function() {
-                sectionToShow.classList.add('fade');
-            }, 100);
-        }
-    </script>
-
+    <footer>
+        <p>Contact: <a href="mailto:akash.dwivd@gmail.com">akash.dwivd@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/akashdwivd">linkedin.com/in/akashdwivd</a></p>
+    </footer>
 </body>
 </html>
